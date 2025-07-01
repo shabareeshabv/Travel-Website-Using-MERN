@@ -1,2 +1,2 @@
 # Travel-Website-Using-MERN 
-Demo - https://vercel.com/shabareeshabvs-projects/travel-website-using-mern
+Demo - https://travel-website-using-mern.vercel.app/
