@@ -1,0 +1,75 @@
+.NavbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: #94B4C1;
+    color: rgb(255, 253, 253);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays on top */
+    width: 100%;
+}
+.navbar-logo {
+    padding: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: 213448;
+}
+
+.menu-icons {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    padding: 10px 15px;
+}
+
+.nav-menu li a {
+    color: rgb(28, 27, 27);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 768px) {
+    .menu-icons {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #133253;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
+/* Sign Up Button */
+.signup-btn {
+    padding: 10px 15px;
+    background: #bfcbd7;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: #3f4750;
+}

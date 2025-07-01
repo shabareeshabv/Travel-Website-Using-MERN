@@ -1,0 +1,80 @@
+.payment-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.payment-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.payment-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.payment-tabs button {
+  flex: 1;
+  padding: 12px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  transition: background 0.3s;
+}
+.trip-summary {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f3f3f3;
+  border-left: 4px solid #007bff;
+}
+.trip-summary p {
+  margin: 5px 0;
+}
+
+
+.payment-tabs button.active {
+  background-color: #27ae60;
+  color: white;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-form input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.payment-form .row {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-form button {
+  padding: 12px;
+  background-color: #2ecc71;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.payment-form button:hover {
+  background-color: #27ae60;
+}
