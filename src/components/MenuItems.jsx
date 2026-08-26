@@ -19,7 +19,7 @@ export const MenuItems = [
   },
    {
     title: "Gallery",
-    url: "/gallary",
+    url: "/gallery",
     cName: "nav-links",
     icon: "fas fa-concierge-bell",
   },

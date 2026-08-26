@@ -1,34 +1,94 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import "./Gallery.css";
+
+const galleryImages = [
+  {
+    id: 1,
+    url: "https://picsum.photos/600/400?random=1",
+    title: "Forest Road",
+  },
+  {
+    id: 2,
+    url: "https://picsum.photos/600/400?random=2",
+    title: "Ocean Waves",
+  },
+  {
+    id: 3,
+    url: "https://picsum.photos/600/400?random=3",
+    title: "Mountain Peaks",
+  },
+  {
+    id: 4,
+    url: "https://picsum.photos/600/400?random=4",
+    title: "Mist and Trees",
+  },
+  {
+    id: 5,
+    url: "https://picsum.photos/600/400?random=5",
+    title: "Laptop on Desk",
+  },
+  {
+    id: 6,
+    url: "https://picsum.photos/600/400?random=6",
+    title: "City Streets",
+  },
+];
 
 function Gallery() {
-  const images = [
-    "/images/gallery-1.jpg",
-    "/images/gallery-2.jpg",
-    "/images/gallery-3.jpg",
-    "/images/gallery-4.jpg",
-    "/images/gallery-5.jpg",
-    "/images/gallery-6.jpg",
-  ];
-
   return (
     <>
       <Navbar />
 
-      <main className="gallery-page">
+      <section className="gallery-section">
         <div className="gallery-container">
-          <h1>Gallery</h1>
-          <p>Explore our gallery</p>
 
+          {/* Heading */}
+          <div className="gallery-heading">
+            <h2 className="gallery-title">
+              Photo Gallery
+            </h2>
+
+            <p className="gallery-subtitle">
+              Explore beautiful moments, destinations and unforgettable
+              travel experiences.
+            </p>
+
+            <div className="gallery-line"></div>
+          </div>
+
+          {/* Gallery Grid */}
           <div className="gallery-grid">
-            {images.map((image, index) => (
-              <div className="gallery-item" key={index}>
-                <img src={image} alt={`Gallery ${index + 1}`} />
+            {galleryImages.map((image) => (
+              <div
+                key={image.id}
+                className="gallery-item"
+              >
+                {/* Image */}
+                <img
+                  src={image.url}
+                  alt={image.title}
+                  className="gallery-image"
+                />
+
+                {/* Overlay */}
+                <div className="gallery-overlay">
+                  <div className="gallery-overlay-content">
+                    <h3 className="gallery-item-title">
+                      {image.title}
+                    </h3>
+
+                    <p className="gallery-item-description">
+                      Explore destination
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
+
         </div>
-      </main>
+      </section>
 
       <Footer />
     </>
