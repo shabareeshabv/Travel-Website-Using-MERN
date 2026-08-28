@@ -10,6 +10,7 @@ import PaymentPage from "./components/PaymentPage";
 import TripDetails from "./components/TripDetails";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./components/AuthContext";
+import Gallery from "./routes/Gallery";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />}/>
           <Route path="/Signup" element={<SignUp />} />
           <Route
             path="/Payment"
