@@ -17,6 +17,12 @@ export const MenuItems = [
     cName: "nav-links",
     icon: "fas fa-concierge-bell",
   },
+   {
+    title: "Gallery",
+    url: "/gallery",
+    cName: "nav-links",
+    icon: "fas fa-concierge-bell",
+  },
   {
     title: "Contact",
     url: "/contact",

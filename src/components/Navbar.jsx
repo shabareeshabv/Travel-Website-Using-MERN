@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./NavbarStyles.css";
 import { MenuItems } from "./MenuItems";
 import { useAuth } from "./AuthContext";
+import logo from "../assets/travel-website-logo.png"
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -19,7 +20,8 @@ function Navbar() {
   return (
     <nav className="NavbarItems">
       <Link to="/">
-        <h1 className="navbar-logo">Travel-To-World</h1>
+      <img src={logo} 
+      />
       </Link>
 
       <div className="menu-icons" onClick={handleClick}>
