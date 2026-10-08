@@ -25,13 +25,13 @@ body,
     /* margin: 15px 20px 0 20px;
     padding: 10px 30px; */
 
-    background: #789ABF;
+    background: #f1f2f4;
     color: white;
 
     position: sticky;
     top: 0;
     z-index: 1000;
-
+ 
   
 }
 
@@ -71,6 +71,15 @@ body,
     white-space: nowrap;
 }
 
+.nav-menu li a:hover {
+     background: #3f4750;
+    color: rgb(177, 37, 37);
+     text-decoration: underline;
+    transform: translateY(-10px);
+   
+}
+
+
 /* Mobile icon */
 .menu-icons {
     font-size: 24px;
@@ -78,7 +87,6 @@ body,
     display: none;
 }
 
-/* Sign Up */
 .signup-btn {
     padding: 10px 15px;
     background: #bfcbd7;
@@ -86,10 +94,15 @@ body,
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
+    transition: all 0.3s ease;
 }
 
 .signup-btn:hover {
     background: #3f4750;
+    color: rgb(177, 37, 37);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Mobile */
